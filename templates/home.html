@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jiu.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <script src="{{ url_for('static', filename='projeto/ailson/jiu.js') }}"></script>
+  <title>BjjGus</title>
+</head>
+
+<header>
+    <a href="home.html">Página Inicial</a> &nbsp; <a href="cadastro">Cadastre-se</a>  &nbsp; <a href="login">Login</a> &nbsp; <a href="Instrutores">Instrutores</a>
+    <h1>BjjGus</h1>
+</header>
+
+
+    <title>Bjj</title>
+<body>
+
+    <nav>
+
+        <div class="header-icons">
+            <a href="#" class="icon-link"><i class="fas fa-user-plus"></i> Cadastre-se</a>
+            <a href="#" class="icon-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+
+        <div class="notification-icon"><i class="far fa-bell"></i></div>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Treinos</a></li>
+            <li><a href="#">Instrutores</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Bem-vindo </h2>
+            <p>Descubra o poder das artes marciais. 
+        </section>
+        <img src="static/imagens/macacoteam.jpg" alt="macacoteam.jpg">
+        <section>
+            <h2>Deixe um Comentário</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+    
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+    
+                <button type="submit">Enviar Comentário</button>
+            </form>
+        </section>
+        <section>
+            <h2>Nossos Programas</h2>
+            <p>Explore nossos programas de treinamento, desde iniciantes até avançados. Adaptamos nosso treinamento para atender às suas necessidades.</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023, oss.</p>
+    </footer>
+  
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+
+/* No seu bloco de estilo CSS existente ... */
+
+.header-icons {
+  margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+.icon-link {
+  color: #b0abab; /* Cor dos links */
+  text-decoration: none;
+  margin-left: 20px; /* Ajuste conforme necessário */
+  font-size: 18px; /* Ajuste conforme necessário */
+}
+
+.icon-link i {
+  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #dae0da;
+  font-family: 'Fantasy', sans-serif;
+
+}
+
+.notification-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #be0e0e;
+  cursor: pointer;
+}
+
+.notification-icon:hover {
+  color: #939b95;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #b6c7b7;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #877575;
+      z-index: 1;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+
+  nav ul li {
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}

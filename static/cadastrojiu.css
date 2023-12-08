@@ -1,0 +1,91 @@
+body {
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+
+}
+body {
+    background-color: rgb(112, 112, 166);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #030a12;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px) {
+   
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para o cabeçalho */
+  header {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+  }
+  
+  /* Estilizar links no cabeçalho */
+  header a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remover sublinhado */
+    margin: 0 15px; /* Espaçamento entre os links */
+  }
+  
+  /* Estilizar links no hover (quando o mouse passa por cima) */
+  header a:hover {
+    text-decoration: underline; /* Adicionar sublinhado no hover */
+  }
+/* Estilos para as imagens na galeria */
