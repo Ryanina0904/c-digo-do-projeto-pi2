@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginBjj</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='loginjiu.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="{{ url_for('static', filename='scripts/login.js') }}"></script>
+</head>
+
+<header>
+    <a href="home">Página Inicial</a> &nbsp; <a href="cadastro">Cadastre-se</a>  &nbsp; <a href="login">Login</a> &nbsp; <a href="Instrutores">Instrutores</a>
+</header>
+
+<body>
+
+    <div class="login-container">
+        <h2>BjjGus</h2>
+        <form name="login" method="post" action="{{ url_for('login_usuario') }}" onsubmit="return realizarLogin();">
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"  autocomplete="off" required>
+    
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha"  autocomplete="off" required>
+    
+            <button type="submit">Entrar</button>
+        
+        </form>
+       
+        <div id="mensagem"></div>
+       
+        <div class="social-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+
+</body>
+</html>
