@@ -1,32 +1,33 @@
-
-
-/* No seu bloco de estilo CSS existente ... */
-
-.header-icons {
-  margin-top: 10px; /* Ajuste conforme necessário */
+.notification-icon {
+  position: relative;
+  cursor: pointer;
 }
 
-.icon-link {
-  color: #b0abab; /* Cor dos links */
-  text-decoration: none;
-  margin-left: 20px; /* Ajuste conforme necessário */
-  font-size: 18px; /* Ajuste conforme necessário */
+.notification-popup {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .icon-link i {
-  margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+  margin-right: 5px;
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #121212;
+  background-color: #282c35; /* Cor de fundo mais escura */
   color: #fff;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
+  background-color: #1a1d23; /* Cor de fundo do cabeçalho */
   padding: 20px;
   text-align: center;
 }
@@ -35,7 +36,6 @@ header h1 {
   margin: 0;
   color: #dae0da;
   font-family: 'Fantasy', sans-serif;
-
 }
 
 .notification-icon {
@@ -43,70 +43,93 @@ header h1 {
   top: 10px;
   right: 10px;
   font-size: 24px;
-  color: #be0e0e;
+  color: #ff5e5e; /* Cor do ícone de notificação */
   cursor: pointer;
 }
 
 .notification-icon:hover {
-  color: #939b95;
-}
-
-nav {
-  background-color: #222;
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: #b6c7b7;
+  color: #f95959; 
 }
 
 .menu-icon {
-  display: none;
   cursor: pointer;
   font-size: 24px;
 }
 
 @media only screen and (max-width: 600px) {
   nav ul {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #877575;
-      z-index: 1;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #877575;
+    z-index: 1;
   }
 
   nav ul.show {
-      display: flex;
+    display: flex;
   }
 
   .menu-icon {
-      display: block;
+    display: block;
   }
 
   nav ul li {
-      margin: 0;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 10px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
   }
+}
+/* Seu arquivo CSS existente */
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content:center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation a:hover {
+  color: #b6c7b7;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #4d4d4d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #111010;
+  width: 50%;
+  text-align: center;
+}
+
+.fechar-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.fechar-modal:hover {
+  color: #d2d0d0;
+  cursor: pointer;
 }

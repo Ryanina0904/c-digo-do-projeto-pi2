@@ -1,44 +1,40 @@
-/* Estilos gerais */
 body {
-    background-color: #2a2a2a; /* Cor de fundo escura */
-    color: #fff; /* Cor do texto clara */
-    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a2a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilos do cabeçalho */
 header {
-    background-color: #1a1a1a; /* Cor de fundo mais escura para o cabeçalho */
+    background-color: #1a1a1a;
     padding: 20px;
+    text-align: center;
 }
 
 h1, h2 {
-    color: #fff; /* Cor do título clara */
+    color: #fff;
 }
 
-/* Estilos para a seção principal de instrutores */
 #instrutores {
     margin: 20px;
 }
 
 .instrutor {
-    background-color: #333; /* Cor de fundo mais escura para cada bloco de instrutor */
+    background-color: #333;
     color: #fff;
     padding: 15px;
     margin-bottom: 10px;
 }
 
-/* Estilos para links */
 a {
-    color: #4eade2; /* Cor dos links */
+    color: #4eade2;
 }
 
 a:hover {
-    color: #fff; /* Cor dos links ao passar o mouse */
+    color: #fff;
 }
 
-/* Outros estilos conforme necessário */
-
-/* Estilos para o rodapé */
 footer {
     background-color: #1a1a1a;
     padding: 10px;
@@ -46,7 +42,6 @@ footer {
     text-align: center;
 }
 
-/* Estilo para botões, se necessário */
 .btn {
     background-color: #4eade2;
     color: #fff;
@@ -57,4 +52,29 @@ footer {
 
 .btn:hover {
     background-color: #265273;
+}
+
+/* Adicione os estilos da barra de notificação (notification-icon, notification-popup) abaixo desta linha */
+.notification-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ff5e5e;
+    cursor: pointer;
+}
+
+.notification-icon:hover {
+    color: #f95959;
+}
+
+.notification-popup {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
 }

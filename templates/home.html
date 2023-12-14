@@ -6,12 +6,29 @@
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jiu.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <script src="{{ url_for('static', filename='projeto/ailson/jiu.js') }}"></script>
+  <script src="{{ url_for('static', filename='scripts/jiu.js') }}"></script>
   <title>BjjGus</title>
 </head>
 
 <header>
-    <a href="home.html">Página Inicial</a> &nbsp; <a href="cadastro">Cadastre-se</a>  &nbsp; <a href="login">Login</a> &nbsp; <a href="Instrutores">Instrutores</a>
+
+    
+    <ul class="navigation">
+            <a href="home">Início</a>
+            <a href="cadastro">Cadastro</a>
+            <a href="login">Login</a>
+            <a href="Instrutores">Instrutores</a>
+    </ul>
+    <div class="notification-icon">
+        <i class="fas fa-bell"></i>
+      </div>
+    <div class="notification-popup" id="notificationPopup">
+            <div id="noNotificationsMessage" style="display: none;">Não há notificações.</div>
+        
+    
+    </div>
+  
+      </div>
     <h1>BjjGus</h1>
 </header>
 
@@ -19,47 +36,18 @@
     <title>Bjj</title>
 <body>
 
-    <nav>
-
-        <div class="header-icons">
-            <a href="#" class="icon-link"><i class="fas fa-user-plus"></i> Cadastre-se</a>
-            <a href="#" class="icon-link"><i class="fas fa-sign-in-alt"></i> Login</a>
-        </div>
-
-        <div class="notification-icon"><i class="far fa-bell"></i></div>
-
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Treinos</a></li>
-            <li><a href="#">Instrutores</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
 
     <main>
         <section>
-            <h2>Bem-vindo </h2>
-            <p>Descubra o poder das artes marciais. 
+            <h2>Seja bem vindo.</h2>
+            <p>Bem-vindo ao BjjGus! Meu nome é Ryan, e sou apaixonado por jiu-jitsu há 7 anos. Decidi criar este site com o objetivo de promover e destacar os talentosos atletas da nossa cidade. Aqui, você encontrará informações sobre programas de treinamento, notícias do mundo do jiu-jitsu e, claro, perfis inspiradores dos praticantes locais. Sinta-se à vontade para explorar e conhecer mais sobre o incrível universo das artes marciais.</p>
         </section>
-        <img src="static/imagens/macacoteam.jpg" alt="macacoteam.jpg">
+        <br>
         <section>
-            <h2>Deixe um Comentário</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-    
-                <label for="comentario">Comentário:</label>
-                <textarea id="comentario" name="comentario" rows="4" required></textarea>
-    
-                <button type="submit">Enviar Comentário</button>
-            </form>
-        </section>
-        <section>
-            <h2>Nossos Programas</h2>
-            <p>Explore nossos programas de treinamento, desde iniciantes até avançados. Adaptamos nosso treinamento para atender às suas necessidades.</p>
-        </section>
+          <h2>Em breve</h2>
+          <p>"Estamos trabalhando arduamente para desenvolver programas de treino exclusivos que visam aprimorar seu desempenho no jiu-jitsu. Fique atento, pois em breve estaremos disponibilizando esses recursos incríveis para ajudar você a alcançar todo o seu potencial."</p>
+
+
 
 
     </main>
@@ -67,6 +55,11 @@
     <footer>
         <p>&copy; 2023, oss.</p>
     </footer>
-  
+    <div id="modalBemVindo" class="modal">
+        <div class="modal-content">
+          <span class="fechar-modal" onclick="fecharModalBemVindo()">&times;</span>
+          <p>Bem-vindo, guerreiro!</p>
+        </div>
+      </div>
 </body>
 </html>

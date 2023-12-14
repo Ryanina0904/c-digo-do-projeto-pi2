@@ -10,22 +10,25 @@
 </head>
 
 <header>
-    <a href="home">Página Inicial</a> &nbsp; <a href="cadastro">Cadastre-se</a>  &nbsp; <a href="login">Login</a> &nbsp; <a href="Instrutores">Instrutores</a>
+
+    <ul class="navigation">
+        <li><a href="home">Início</a></li>
+        <li><a href="cadastro">Casdastre-se</a></li>
+        <li><a href="login">login</a></li>
+        <li><a href="Instrutores">Instrutores</a></li>
+
+    </ul>
 </header>
 
 
 <body>
-    <p>Macaco Team <i class="fab fa-instagram"></p>
+    <h1>Lista de Instrutores:</h1>
+    <div class="container">
+        <p>Macaco Team </p>
+        <img src="static/imagens/macacoteam.jpg" alt="macacoteam" style="width: 300px; height: auto;">
+      </div>
+     
 
-        <h1>Lista de Instrutores</h1>
-
-    {% for instrutor in instrutores %}
-        <div>
-            <h2>{{ instrutor.nome }}</h2>
-            <p>{{ instrutor.descricao }}</p>
-        </div>
-    {% endfor %}
-    
-    
+     
 </body>
 </html>

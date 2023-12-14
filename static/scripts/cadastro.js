@@ -28,6 +28,7 @@ function validateCadastro() {
     .then(response => {
         if (response.ok) {
             return response.json();
+            
         } else {
             throw new Error('Erro no cadastro');
         }
@@ -46,3 +47,6 @@ function validarEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+document.addEventListener('DOMContentLoaded', function () {
+    localStorage.setItem('cadastroRecente', 'true');
+});

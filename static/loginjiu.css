@@ -57,3 +57,14 @@ body {
 .social-icons i:hover {
     color: #95a996;
 }
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro se o conteúdo for de alturas diferentes */
+  }
+  
+  img {
+    width: 100px; /* Defina a largura conforme necessário */
+    height: auto; /* Mantém a proporção original da imagem */
+    margin-right: 10px; /* Espaço à direita da imagem */
+  }
+  
